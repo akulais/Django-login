@@ -1,0 +1,8 @@
+<h1>Register Here!</h1>
+<form action="{% url 'accounts-register' %}" method="POST">
+{% csrf_token %}
+{{ form }}
+<input type="submit" name="submit"/>
+</form>
+
+<a href="/">return to login</a>
